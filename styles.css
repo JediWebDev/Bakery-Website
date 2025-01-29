@@ -12,6 +12,10 @@
     --color-text: #3c3734;
   }
 
+.logo {
+    height: 40px;
+}
+
 .navbar.bg-dark {
     background-color: transparent !important; 
   }
