@@ -20,12 +20,18 @@
     background-color: transparent !important; 
   }
 
-  .navbar.bg-dark .nav-link {
-    color: black !important; 
+  .nav-item .nav-link {
+    color: var(--color-text) !important; 
+  }
+
+  .nav-item .btn-secondary {
+    background-color: var(--color-accent) !important;
+    border-color: var(--color-accent) !important;
+    color: white !important;
   }
   
-  .navbar.bg-dark .nav-link:hover {
-    color: var(--color-primary) !important; 
+  .nav-item .nav-link:hover {
+    color: var(--color-accent) !important; 
   }
 
 
@@ -55,22 +61,22 @@
 .hero-content .btn-primary {
   background-color: var(--color-primary) !important;
   border-color: var(--color-primary) !important;
-  color: var(--color-secondary) !important;
+  color: var(--color-text) !important;
 }
 
 @media (min-width: 768px) {
   .navbar-nav {
       display: flex;
-      justify-content: center;
-      width: 100%;
+      justify-content: flex-end; /* Align to the right */
+      width: auto;
+      margin-left: auto;
   }
 
   .navbar-nav .nav-item {
-    flex: 0; 
-    margin-left: 10px; 
-    margin-right: 10px; 
-    text-align: center;
-}
+      margin-left: 10px; 
+      margin-right: 10px; 
+      text-align: center;
+  }
 
   .navbar-nav .nav-link {
       display: inline-block;
