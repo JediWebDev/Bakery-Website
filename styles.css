@@ -25,15 +25,18 @@
   }
   
   .navbar.bg-dark .nav-link:hover {
-    color: gray !important; 
+    color: var(--color-primary) !important; 
   }
+
 
   .hero {
     position: relative;
-    background: url(C:\Users\andre\Desktop\Bakery-Website\images\hero-image.jpg) center/cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background: url('C:/Users/andre/Desktop/Bakery-Website/images/hero-image.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 .hero-content {
@@ -41,4 +44,16 @@
     z-index: 1;
     color: white;
     max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h1, .hero-content p, .hero-content a {
+    z-index: 2;
+    position: relative;
+}
+
+.hero-content .btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-secondary) !important;
 }
