@@ -27,3 +27,18 @@
   .navbar.bg-dark .nav-link:hover {
     color: gray !important; 
   }
+
+  .hero {
+    position: relative;
+    background: url(C:\Users\andre\Desktop\Bakery-Website\images\hero-image.jpg) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 600px;
+}
