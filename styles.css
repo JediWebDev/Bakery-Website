@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --color-primary: #fdf2d6;
+    --color-secondary: #2d2825;
+    --color-accent: #fdbb89;
+    --color-background: #dcc3b0;
+    --color-text: #3c3734;
+  }
+
+.navbar.bg-dark {
+    background-color: transparent !important; 
+  }
+
+  .navbar.bg-dark .nav-link {
+    color: black !important; 
+  }
+  
+  .navbar.bg-dark .nav-link:hover {
+    color: gray !important; 
+  }
