@@ -6,22 +6,29 @@
 
   :root {
     --color-primary: #fdf2d6;
-    --color-secondary: #2d2825;
+    --color-secondary: #FB8A7C;
     --color-accent: #fdbb89;
     --color-background: #dcc3b0;
     --color-text: #3c3734;
   }
 
 .logo {
-    height: 40px;
+    height: 50px;
 }
-
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+}
 .navbar.bg-dark {
-    background-color: transparent !important; 
+  background-color: transparent !important; 
   }
 
   .nav-item .nav-link {
-    color: var(--color-text) !important; 
+    color: white !important; 
   }
 
   .nav-item .btn-secondary {
@@ -39,6 +46,7 @@
     position: relative;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: url('C:/Users/andre/Desktop/Bakery-Website/images/hero-image.jpg') no-repeat center center;
@@ -62,6 +70,11 @@
   background-color: var(--color-primary) !important;
   border-color: var(--color-primary) !important;
   color: var(--color-text) !important;
+}
+.hero-content .btn-primary:hover {
+  background-color: transparent !important;
+  border-color: var(--color-secondary) !important;
+  color: white !important;
 }
 
 @media (min-width: 768px) {
