@@ -40,7 +40,9 @@
   .nav-item .nav-link:hover {
     color: var(--color-accent) !important; 
   }
-
+  nav .navbar-toggler {
+    color: white;
+  }
 
   .hero {
     position: relative;
@@ -93,5 +95,21 @@
 
   .navbar-nav .nav-link {
       display: inline-block;
+  }
+}
+
+@media (max-width: 430px) {
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  footer ul {
+    margin-bottom: 8px; 
+  }
+
+  footer span {
+    margin-bottom: 0;
   }
 }
