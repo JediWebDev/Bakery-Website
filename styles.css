@@ -50,11 +50,21 @@ nav .navbar-toggler {
   color: white;
 }
 .navbar-toggler {
-  border-color: white; /* Change the border color */
+  border-color: white; /* Changes the border color to white*/
 }
 nav .navbar-toggler-icon {
-  filter: invert(1) !important; /* Turns the icon white */
+  filter: invert(1) !important; /* Turns the icon to white */
   border: white !important;
+}
+.navbar-collapse {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-collapse.show {
+  display: block;
+  padding-bottom: 10px; 
 }
 
 .hero::before {
@@ -79,7 +89,7 @@ nav .navbar-toggler-icon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("C:/Users/andre/Desktop/Bakery-Website/images/hero-image.jpg")
+  background: url("images/hero-image.jpg")
     no-repeat center center;
   background-size: cover;
 }
@@ -90,6 +100,7 @@ nav .navbar-toggler-icon {
   color: white;
   max-width: 600px;
   padding: 20px;
+  margin-top: 25px;
 }
 
 .hero-content h1,
@@ -129,7 +140,33 @@ nav .logo {
   margin-top: 150px !important; 
 }
 
+.breads-banner {
+  background-image: url('images/breads-banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin-top: 250px;
+}
 
+.breads-banner h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.breads-banner p {
+  font-size: 1.25em;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
 /* footer */
 footer .logo {
   height: 40px;
