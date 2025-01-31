@@ -125,6 +125,16 @@ nav .navbar-toggler-icon {
 nav .logo {
   height: 100px;
 }
+.products-nav .navbar-toggler {
+  color: var(--color-text);
+}
+.products-nav .navbar-toggler {
+  border-color: var(--color-text); /* Changes the border color to gray*/
+}
+.products-nav .navbar-toggler-icon {
+  border: var(--color-text) !important;
+}
+
 .products-nav .nav-item .nav-link {
   color: var(--color-text) !important;
 }
