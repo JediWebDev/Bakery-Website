@@ -170,13 +170,32 @@ nav .logo {
 }
 
 .breads-banner p {
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 
 .card img {
   height: 200px;
   object-fit: cover;
 }
+.products .btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-text) !important;
+}
+.products .btn-primary:hover {
+  background-color: transparent !important;
+  border-color: var(--color-secondary) !important;
+  color: var(--color-text) !important;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%; 
+}
+
+
 /* footer */
 footer .logo {
   height: 40px;
