@@ -64,7 +64,7 @@ nav .navbar-toggler-icon {
 
 .navbar-collapse.show {
   display: block;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
 }
 
 .hero::before {
@@ -89,8 +89,7 @@ nav .navbar-toggler-icon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("images/hero-image.jpg")
-    no-repeat center center;
+  background: url("images/hero-image.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -147,11 +146,11 @@ nav .logo {
   color: var(--color-text) !important;
 }
 .products-main {
-  margin-top: 150px !important; 
+  margin-top: 150px !important;
 }
 
 .breads-banner {
-  background-image: url('images/breads-banner.png');
+  background-image: url("images/breads-banner.png");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -191,20 +190,31 @@ nav .logo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; 
-  width: 100%; 
+  align-items: center;
+  width: 100%;
 }
-
 
 /* footer */
 footer .logo {
-  height: 40px;
+  height: 50px;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .business-content {
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 20px; 
 }
 
 @media (min-width: 768px) {
   .navbar-nav {
     display: flex;
-    justify-content: flex-end; /* Align to the right */
+    justify-content: flex-end; 
     width: auto;
     margin-left: auto;
   }
@@ -220,18 +230,37 @@ footer .logo {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   footer ul {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
 
+@media (max-width: 430px) {
+  .breads-banner h2 {
+    font-size: 1.5rem;
+  }
+  .breads-banner p {
+    font-size: 1rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .address {
+    font-size: 0.8rem;
+  }
+  footer .hours {
+    font-size: 0.8rem;
+  }
   footer ul {
     margin-bottom: 8px;
   }
 
   footer span {
+    font-size: 1rem;
     margin-bottom: 0;
   }
 }
