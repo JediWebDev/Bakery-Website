@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,14 +8,12 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-  <main>
-    <section class="hero d-flex align-items-center">
-      <nav class="navbar navbar-expand-sm" aria-label="navbar">
+  <header>
+    <section class="products-nav d-flex align-items-center">
+      <nav class="navbar navbar-expand-sm d-flex align-items-center" aria-label="navbar">
         <div class="container-fluid d-flex align-items-center">
-          <a class="navbar-brand me-auto" href="#">
+          <a class="navbar-brand me-auto" href="C:\Users\andre\Desktop\Bakery-Website\index.html">
             <img class="logo" src="images/logo.png" alt="Bakery Logo">
           </a>
           <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse"
@@ -45,22 +42,102 @@
           </div>
         </div>
       </nav>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-lg-6">
-            <div class="hero-content">
-              <h1 class="display-4 fw-bold">Savor the Artistry in Every Bite</h1>
-              <p class="lead">Indulge in our world of artisanal baked breads and desserts, where each creation is a
-                masterpiece crafted with love, passion, and the finest ingredients. Our bakers blend traditional
-                techniques with innovative flavors to bring you delightful treats that enchant your senses and bring joy
-                to your table.</p>
-              <a href="C:\Users\andre\Desktop\Bakery-Website\breads.html" class="btn btn-primary btn-lg">Explore</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-  </main>
+  </header>
+
+    <main>
+      <div class="py-5 text-center">
+        <h2>Catering Request Form</h2>
+        <p class="lead">Our bakery offers exceptional catering services for all types of events, from intimate gatherings to grand celebrations. We take pride in crafting personalized menus featuring our artisanal breads, delectable desserts, and savory treats. To ensure the highest quality and a seamless experience, we request that catering orders be placed at least one week in advance. Payment for catering services is based on the specific requirements of each event, allowing us to tailor our offerings to meet your needs and budget. Let us bring our passion for baking to your next event and make it truly memorable.</p>
+      </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Contact Information</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="phone" class="form-label">Phone Number</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" id="username" placeholder="phone" required="">
+                <div class="invalid-feedback">
+                    Your phone number is required.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                <div class="invalid-feedback">
+                  Please enter your address.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+              </div>
+  
+              <div class="col-md-5">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+  
+            <a href="#" class= "btn btn-primary">Submit</a>
+          </form>
+        </div>
+     
+    </main>
+  </div>
   <footer>
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center border-top py-3">
