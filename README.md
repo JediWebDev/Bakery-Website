@@ -5,13 +5,13 @@ A responsive bakery website showcasing baked goods, product listings, and a cate
 ## 📸 Previews
 
 ### Home Page
-![Home Page](home-page-preview.png)
+![Home Page](images/home-page-preview.png)
 
 ### Product Page
-![Product Page](product-page-preview.png)
+![Product Page](images/product-page-preview.png)
 
 ### Catering Form Page
-![Catering Form Page](catering-form-page.png)
+![Catering Form Page](images/catering-form-page.png)
 
 ## 🚀 Features
 - 🍞 **Home Page:** Displays featured baked goods and bakery highlights.
