@@ -194,6 +194,28 @@ nav .logo {
   width: 100%;
 }
 
+/* Catering Form Page */
+   .form-container {
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header-spacing {
+    padding-top: 100px; 
+  }
+  .catering .btn-primary {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    color: var(--color-text) !important;
+  }
+  .catering .btn-primary:hover {
+    background-color: transparent !important;
+    border-color: var(--color-secondary) !important;
+    color: var(--color-text) !important;
+  }
+
 /* footer */
 footer .logo {
   height: 50px;
