@@ -10,14 +10,14 @@
 </head>
 <body>
   <header>
-    <section class="products-nav d-flex align-items-center">
-      <nav class="navbar navbar-expand-sm d-flex align-items-center" aria-label="navbar">
+    <div class="products-nav d-flex align-items-center">
+      <nav class="navbar navbar-expand-sm d-flex align-items-center" aria-label="Main navigation">
         <div class="container-fluid d-flex align-items-center">
           <a class="navbar-brand me-auto" href="/Bakery-Website/index.html">
             <img class="logo" src="images/logo.png" alt="Bakery Logo">
           </a>
           <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarsExample03" aria-controls="navbar" aria-expanded="false"
+            data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,7 +42,7 @@
           </div>
         </div>
       </nav>
-    </section>
+    </div>
   </header>
 
   <main class="form-container">
@@ -53,10 +53,9 @@
       </div>
       <form
       action="https://formspree.io/f/xbldypjz"
-      method="POST">
+      method="POST" class="needs-validation" novalidate="">
       <div class="col-md-7 col-lg-8 mx-auto">
         <h4 class="mb-3">Contact Information</h4>
-        <form class="needs-validation" novalidate="">
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">First name</label>
@@ -119,7 +118,6 @@
           </div>
 
           <button type="submit" name="submit" class="btn btn-primary mt-3">Submit</button>
-        </form>
       </div>
     </form>
     </div>
